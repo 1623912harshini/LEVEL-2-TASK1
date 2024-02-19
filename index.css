@@ -1,0 +1,65 @@
+*{
+    margin: 10;
+    padding: 10;
+    box-sizing:border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(#e474a1, #90c1e9, #f4ecec);
+}
+
+.nav-link{
+    color: #fff;
+}
+/* Custom CSS */
+.custom-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.custom-card::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, #e474a1, #90c1e9, #f4ecec);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s;
+}
+
+.cardmb-4{
+    background-color:linear-gradient(45deg, #0e0c0c, #a4ef18, #f4ecec);
+}
+.custom-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-image img {
+    width: 100%;
+    height: auto;
+}
+
+.custom-card-content {
+    padding: 1.5rem;
+}
+
+/* Hover Effect */
+.custom-card:hover {
+    transform: scale(1.05);
+}
+
+.custom-card:hover::before {
+    opacity: 1;
+}
